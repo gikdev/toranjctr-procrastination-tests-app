@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url("./Vazirmatn[wght].ttf");
+}
+
+@theme {
+  --font-main: Vazirmatn, sans-serif;
+  --color-nitro-1: #4e38c0;
+  --color-nitro-2: #bb52c2;
+}
+
+@utility bg-nitro-br {
+  @apply bg-linear-to-br from-nitro-1 to-nitro-2;
+}
+
+@utility bg-nitro-r {
+  @apply bg-linear-to-r from-nitro-1 to-nitro-2;
+}
