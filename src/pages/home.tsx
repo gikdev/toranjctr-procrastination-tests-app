@@ -14,6 +14,9 @@ export default function Home() {
             {t.name}
           </Link>
         ))}
+        <p>
+          <code>v2</code>
+        </p>
       </div>
     </div>
   )

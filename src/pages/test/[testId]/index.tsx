@@ -173,6 +173,9 @@ export default function TestId() {
             )}
 
             <p>عکس از صفحه هم بگیر یادگاری... 😉</p>
+            <Link to="/" className="btn btn-block">
+              بریم خونه؟
+            </Link>
           </>
         )}
       </form>
@@ -192,13 +195,16 @@ function Question({ question, className = "", scores, setScores }: QProps) {
 
   return (
     <div className={`${className} flex flex-col gap-5`}>
-      <p className="font-bold text-lg text-start">
+      <p className="font-bold text-lg">
         {question.id}. {question.question}
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {question.answers.map(a => (
-          <label className="cursor-pointer flex gap-1 items-center p-2 rounded-md bg-base-300" key={a.id}>
+          <label
+            className="cursor-pointer flex gap-1 items-center p-2 rounded-md bg-base-300"
+            key={a.id}
+          >
             <input
               name={id}
               checked={scores[question.id - 1] === a.score}

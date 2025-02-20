@@ -1,8 +1,8 @@
 import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
 import { BrowserRouter } from "react-router"
-import "./assets/styles.css"
 import Pages from "./pages"
+import "./assets/styles.css"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
