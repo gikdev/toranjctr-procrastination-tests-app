@@ -199,7 +199,7 @@ function Question({ question, className = "", scores, setScores }: QProps) {
         {question.id}. {question.question}
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <div className="flex flex-col gap-3">
         {question.answers.map(a => (
           <label
             className="cursor-pointer flex gap-1 items-center p-2 rounded-md bg-base-300"
