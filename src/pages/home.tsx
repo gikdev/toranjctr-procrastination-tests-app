@@ -15,7 +15,7 @@ export default function Home() {
           </Link>
         ))}
         <p>
-          <code>v3</code>
+          <code>v4</code>
         </p>
       </div>
     </div>

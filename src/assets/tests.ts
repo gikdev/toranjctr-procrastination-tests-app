@@ -23,7 +23,7 @@ export interface Answer {
 const genTakmanAnswers = (isReverseMode = false): Answer[] => [
   { id: 0, text: "مطمئنا این چنین نیستم", score: isReverseMode ? 4 : 1 },
   { id: 1, text: "این تمایل در من وجود ندارد", score: isReverseMode ? 3 : 2 },
-  { id: 2, text: "موافقاین تمایل در من وجود دارد", score: isReverseMode ? 2 : 3 },
+  { id: 2, text: "این تمایل در من وجود دارد", score: isReverseMode ? 2 : 3 },
   { id: 3, text: "مطمئنا این چنین هستم", score: isReverseMode ? 1 : 4 },
 ]
 const genSchwartzAnswers = (isReverseMode = false): Answer[] => [
